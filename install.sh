@@ -62,6 +62,15 @@ brew install --cask iina
 # Install kap
 brew install --cask kap  
 
+# Install Rectangle
+brew install --cask rectangle
+
+# Install alt-tab
+brew install --cask alt-tab
+
+# Install Fig
+brew install --cask fig
+
 ######################
 # Install CLI Tools
 ######################
@@ -81,6 +90,12 @@ brew install httpie
 brew install visual-studio-code
 brew install iterm2
 brew install jq
+brew install bat
+brew install tldr
+# Natls
+brew tap willdoescode/homebrew-natls
+brew install natls
+
 
 install_zsh() {
 # Install zsh
