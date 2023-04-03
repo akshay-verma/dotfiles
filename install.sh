@@ -1,3 +1,7 @@
+############################
+# MacOS Tools
+############################
+
 # Install Script
 sudo -v
 
@@ -55,8 +59,12 @@ brew install --cask istat-menus
 # Install IINA
 brew install --cask iina
 
-# Install CLI Tools
+# Install kap
+brew install --cask kap  
 
+######################
+# Install CLI Tools
+######################
 ## thefuck
 brew install thefuck
 
@@ -67,9 +75,9 @@ brew install cantino/mcfly/mcfly
 # HTTPie
 brew install httpie
 
-
+######################
 # PROGRAMMING
-
+######################
 brew install visual-studio-code
 brew install iterm2
 brew install jq
