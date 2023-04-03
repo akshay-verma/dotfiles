@@ -16,3 +16,9 @@ sudo xcode-select --install
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
+
+## Tools
+
+* Raycast
+* oh-my-zsh+p10k
+* Dozer
