@@ -102,6 +102,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Load custom aliases
+source ~/.aliases
+
+# Add brew binary to PATH
 export PATH=$PATH:/opt/homebrew/bin
 
 # For mcfly util to work

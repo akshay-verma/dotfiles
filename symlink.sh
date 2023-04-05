@@ -1,8 +1,8 @@
 ########## Variables
 
-dir=~/dotfiles                    # dotfiles directory
+dir=~/code/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="zshrc oh-my-zsh"    # list of files/folders to symlink in homedir
+files="aliases yabairc skhdrc fzf.zsh gitconfig zshrc"    # list of files/folders to symlink in homedir
 
 ##########
 

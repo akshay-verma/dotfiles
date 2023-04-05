@@ -1,0 +1,29 @@
+#----------------------------------------------------------------------#
+# My Aliases
+#----------------------------------------------------------------------#
+alias exa="exa -a --level 1 --icons"
+alias wget='wget -c'
+
+#----------------------------------------------------------------------#
+# Git Aliases
+#----------------------------------------------------------------------#
+alias gp='git push origin HEAD:refs/for/main%notify=NONE'
+alias gpwip='git push origin HEAD:refs/for/main%wip'
+alias gpready='git push origin HEAD:refs/for/main%ready'
+alias gpull='git pull --rebase origin main'
+alias gcommit='git commit --amend --no-edit'
+alias gs='git status'
+alias gdiff='git diff'
+alias glog='git log --oneline --decorate'
+alias grmfile='git restore --source=HEAD^ --staged  --'
+alias gc='git checkout'
+alias del-branch="git branch --merged | grep -v -P 'main' | xargs -n1 -r git branch -d"
+alias untracked='git ls-files --others --exclude-standard'
+
+#----------------------------------------------------------------------#
+# Functions
+#----------------------------------------------------------------------#
+
+function getsha() {
+    docker pull $1 && docker inspect --format='{{index .RepoDigests 0}}' $1;
+}
