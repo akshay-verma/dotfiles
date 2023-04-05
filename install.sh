@@ -71,6 +71,11 @@ brew install --cask alt-tab
 # Install Fig
 brew install --cask fig
 
+# Install nvm and node
+brew install nvm
+mkdir -p ~/.nvm
+nvm install node
+
 ######################
 # Install CLI Tools
 ######################
@@ -92,6 +97,23 @@ brew install iterm2
 brew install jq
 brew install bat
 brew install tldr
+brew install fzf
+$(brew --prefix)/opt/fzf/install
+npm install --global trash-cli
+brew install exa
+brew install autojump
+brew install the_silver_searcher
+brew install peco
+brew install zoxide
+brew install scc
+brew install hyperfine
+brew install tmux
+brew install fd
+brew install ripgrep
+brew install tree
+brew install colordiff
+brew install diff-so-fancy
+
 # Natls
 brew tap willdoescode/homebrew-natls
 brew install natls
