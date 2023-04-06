@@ -33,3 +33,7 @@ ln -s $dir/nvim ~/.config/nvim
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
 mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
+
+# Symlink python and pip (probably not the best idea!)
+sudo ln -s -f /usr/local/bin/pip3 /usr/local/bin/pip
+sudo ln -s -f /usr/local/bin/python3 /usr/local/bin/python

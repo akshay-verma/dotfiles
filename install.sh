@@ -13,15 +13,15 @@ sudo xcode-select --install
 
 # Install QuickLook Plugins
 brew install --cask \
-    qlcolorcode \
-    qlstephen \
-    qlmarkdown \
-    quicklook-json \
-    qlprettypatch \
-    quicklook-csv \
-    betterzip \
-    webpquicklook \
-    suspicious-package
+	qlcolorcode \
+	qlstephen \
+	qlmarkdown \
+	quicklook-json \
+	qlprettypatch \
+	quicklook-csv \
+	betterzip \
+	webpquicklook \
+	suspicious-package
 
 # Install Mac App Store
 brew install mas
@@ -60,7 +60,7 @@ brew install --cask istat-menus
 brew install --cask iina
 
 # Install kap
-brew install --cask kap  
+brew install --cask kap
 
 # Install Rectangle
 brew install --cask rectangle
@@ -95,9 +95,6 @@ brew install cantino/mcfly/mcfly
 # HTTPie
 brew install httpie
 
-######################
-# PROGRAMMING
-######################
 brew install visual-studio-code
 brew install iterm2
 brew install jq
@@ -120,38 +117,37 @@ brew install tree
 brew install colordiff
 brew install diff-so-fancy
 brew install lazygit
+brew install wget
 
 # Natls
 brew tap willdoescode/homebrew-natls
 brew install natls
 
-
 install_zsh() {
-# Install zsh
-brew install zsh
+	# Install zsh
+	brew install zsh
 
-# Install Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	# Install Oh My Zsh
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# Install zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+	# Install zsh-syntax-highlighting
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-# Install zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+	# Install zsh-autosuggestions
+	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-# Install PowerLevel10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+	# Install PowerLevel10k
+	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-# Install zsh-nvm
-git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+	# Install zsh-nvm
+	git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
 }
 
 install_nvim() {
-# Install Neovim
-brew install neovim
-
+	# Install Neovim
+	brew install neovim
+	pip install neovim
 }
 
 install_zsh
 install_nvim
-
