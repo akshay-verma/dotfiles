@@ -71,6 +71,12 @@ brew install --cask alt-tab
 # Install Fig
 brew install --cask fig
 
+# Install scroll reverser
+brew install --cask scroll-reverser
+
+# Install Kitty
+brew install --cask kitty
+
 # Install nvm and node
 brew install nvm
 mkdir -p ~/.nvm
@@ -113,6 +119,7 @@ brew install ripgrep
 brew install tree
 brew install colordiff
 brew install diff-so-fancy
+brew install lazygit
 
 # Natls
 brew tap willdoescode/homebrew-natls
@@ -139,5 +146,12 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
 }
 
+install_nvim() {
+# Install Neovim
+brew install neovim
+
+}
+
 install_zsh
+install_nvim
 

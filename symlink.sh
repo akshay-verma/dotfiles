@@ -1,8 +1,8 @@
 ########## Variables
 
-dir=~/code/dotfiles                    # dotfiles directory
-olddir=~/dotfiles_old             # old dotfiles backup directory
-files="aliases yabairc skhdrc fzf.zsh gitconfig zshrc"    # list of files/folders to symlink in homedir
+dir=~/code/dotfiles                                    # dotfiles directory
+olddir=~/dotfiles_old                                  # old dotfiles backup directory
+files="aliases yabairc skhdrc fzf.zsh gitconfig zshrc" # list of files/folders to symlink in homedir
 
 ##########
 
@@ -18,8 +18,18 @@ echo "done"
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
 for file in $files; do
-    echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/.$file ~/dotfiles_old/
-    echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
+	echo "Moving any existing dotfiles from ~ to $olddir"
+	mv ~/.$file ~/dotfiles_old/
+	echo "Creating symlink to $file in home directory."
+	ln -s $dir/$file ~/.$file
 done
+
+# Symlink neovim config
+# This also probably can be generalized as above, but don't want to sweat over it.
+# This is super easy and does the job for now.
+mv ~/.config/nvim ~/dotfiles_old/
+ln -s $dir/nvim ~/.config/nvim
+# optional but recommended
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
+mv ~/.local/state/nvim ~/.local/state/nvim.bak
+mv ~/.cache/nvim ~/.cache/nvim.bak
