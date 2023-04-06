@@ -77,10 +77,9 @@ brew install --cask scroll-reverser
 # Install Kitty
 brew install --cask kitty
 
-# Install nvm and node
-brew install nvm
-mkdir -p ~/.nvm
-nvm install node
+# Install n (node manager)
+brew install n
+sudo n latest
 
 ######################
 # Install CLI Tools
