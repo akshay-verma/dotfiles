@@ -81,6 +81,11 @@ brew install --cask kitty
 brew install n
 sudo n latest
 
+# Install pyenv
+brew install pyenv
+pyenv install 3.10.2
+pyenv global 3.10.2
+
 ######################
 # Install CLI Tools
 ######################
