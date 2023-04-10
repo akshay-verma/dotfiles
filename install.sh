@@ -68,9 +68,6 @@ brew install --cask rectangle
 # Install alt-tab
 brew install --cask alt-tab
 
-# Install Fig
-brew install --cask fig
-
 # Install scroll reverser
 brew install --cask scroll-reverser
 
