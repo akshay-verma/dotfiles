@@ -68,6 +68,15 @@ brew install --cask rectangle
 # Install alt-tab
 brew install --cask alt-tab
 
+# Install monitor control
+brew install MonitorControl
+
+# Install Discord
+brew install --cask discord
+
+# Install Dbeaver
+brew install --cask dbeaver-community
+
 # Install scroll reverser
 brew install --cask scroll-reverser
 
