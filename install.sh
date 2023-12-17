@@ -11,53 +11,14 @@ sudo xcode-select --install
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-# Install QuickLook Plugins
-brew install --cask \
-	qlcolorcode \
-	qlstephen \
-	qlmarkdown \
-	quicklook-json \
-	qlprettypatch \
-	quicklook-csv \
-	betterzip \
-	webpquicklook \
-	suspicious-package
-
 # Install Mac App Store
 brew install mas
 
 # Install Raycast
 brew install --cask raycast
 
-# Install Dozer
-brew install --cask dozer
-
 # Install Amphetamine
 mas install 937984704
-
-# Install Flycut
-brew install --cask flycut
-
-# Install Plash
-mas install 1494023538
-
-# Install CleanMyMac X
-brew install --cask cleanmymac
-
-# Install Charmstone
-mas install 1563735522
-
-# Install Mackup
-brew install mackup
-
-# Install Sensei
-brew install --cask sensei
-
-# Install iStatsMenu
-brew install --cask istat-menus
-
-# Install IINA
-brew install --cask iina
 
 # Install kap
 brew install --cask kap
@@ -68,9 +29,6 @@ brew install --cask rectangle
 # Install alt-tab
 brew install --cask alt-tab
 
-# Install monitor control
-brew install MonitorControl
-
 # Install Discord
 brew install --cask discord
 
@@ -80,17 +38,12 @@ brew install --cask dbeaver-community
 # Install scroll reverser
 brew install --cask scroll-reverser
 
-# Install Kitty
-brew install --cask kitty
-
 # Install n (node manager)
 brew install n
 sudo n latest
 
 # Install pyenv
 brew install pyenv
-pyenv install 3.10.2
-pyenv global 3.10.2
 
 ######################
 # Install CLI Tools
