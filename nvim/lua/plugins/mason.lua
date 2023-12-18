@@ -26,6 +26,7 @@ return {
         "ruff", -- python formatter
         "black", -- python formatter
         "pyright", -- python linter
+        "lua-language-server", -- lua LSP
       },
     })
   end,

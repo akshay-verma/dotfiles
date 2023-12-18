@@ -5,7 +5,7 @@ return {
     -- Define your formatters
     formatters_by_ft = {
       lua = { "stylua" },
-      python = { "black" },
+      python = { "black", "ruff" },
     },
     -- Customize formatters
     formatters = {},
