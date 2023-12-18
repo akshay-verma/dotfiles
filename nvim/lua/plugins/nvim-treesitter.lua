@@ -1,5 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  build = ":TSUpdate",
   opts = function(_, opts)
     opts.ignore_install = { "help" }
 
