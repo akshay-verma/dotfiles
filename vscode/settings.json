@@ -1,0 +1,72 @@
+{
+  // -------------------- APC Customize UI --------------------
+  "apc.activityBar": {
+    // "position": "bottom",
+    "hideSettings": true,
+    "size": 28
+  },
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 12,
+      "y": 10
+    }
+  },
+  "apc.statusBar": {
+    "position": "editor-bottom",
+    "height": 20,
+    "fontSize": 11
+  },
+  "apc.stylesheet": {
+    ".sidebar > .composite": "height: 12px !important",
+    ".title-label": "display: none !important",
+    ".title-actions": "display: none !important",
+    ".tabs-and-actions-container > .editor-actions": "display: none !important",
+    ".titlebar-center": "display: none !important",
+    ".titlebar-right": "display: none !important",
+    ".inline-tabs-placeholder": "display: none !important",
+  },
+
+  // Theme
+  "workbench.colorTheme": "Bearded Theme Arc Reversed",
+  "workbench.iconTheme": "bearded-icons",
+  "workbench.sideBar.location": "right",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontSize":  12,
+  "files.trimTrailingWhitespace": true,
+  // "workbench.statusBar.visible": false, // Remove bottom status bar
+
+  // Editor
+  "editor.accessibilitySupport": "off",
+  "editor.formatOnSave": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.glyphMargin": false, // Remove the line number gutter
+  "editor.folding": false, // Remove code-block folding icon
+  "editor.hideCursorInOverviewRuler": true, // Remove position indicator in the editor's scrollbar
+  "window.titleBarStyle": "native", // Move tabs to be in a single line with window controls
+
+  // Terminal
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.enableBell": true,
+  "terminal.integrated.cursorStyle": "line",
+  "workbench.colorCustomizations": {
+    "terminal.ansiBrightBlack":"#686868",
+  },
+  // Python
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  // Typescript
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Bazel
+  "bazel.enableCodeLens": true,
+  "bazel.buildifierFixOnFormat": true,
+  // Git
+  "git.path": "/usr/bin/git",
+  "git.openRepositoryInParentFolders": "never"
+}
