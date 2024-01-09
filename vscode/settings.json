@@ -31,10 +31,10 @@
   "workbench.colorTheme": "Bearded Theme Arc Reversed",
   "workbench.iconTheme": "bearded-icons",
   "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": false, // Remove bottom status bar
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontSize":  12,
   "files.trimTrailingWhitespace": true,
-  // "workbench.statusBar.visible": false, // Remove bottom status bar
 
   // Editor
   "editor.accessibilitySupport": "off",
