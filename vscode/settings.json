@@ -47,6 +47,12 @@
   "editor.hideCursorInOverviewRuler": true, // Remove position indicator in the editor's scrollbar
   "window.titleBarStyle": "native", // Move tabs to be in a single line with window controls
 
+  // Editor Minimap
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.renderCharacters": true,
+  "editor.minimap.size": "proportional",
+  "editor.minimap.maxColumn": 80,
+
   // Terminal
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.enableBell": true,
