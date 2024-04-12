@@ -1,7 +1,8 @@
 #----------------------------------------------------------------------#
 # My Aliases
 #----------------------------------------------------------------------#
-alias exa="exa -a --level 1 --icons"
+alias l="exa -a --long --header --level 1 --icons"
+alias lt="exa -a --long --header --tree --level=2 --icons"
 alias wget='wget -c'
 alias fzf="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
 

@@ -24,16 +24,16 @@
     ".tabs-and-actions-container > .editor-actions": "display: none !important",
     ".titlebar-center": "display: none !important",
     ".titlebar-right": "display: none !important",
-    ".inline-tabs-placeholder": "display: none !important",
+    ".inline-tabs-placeholder": "display: none !important"
   },
 
   // Theme
   "workbench.colorTheme": "Bearded Theme Arc Reversed",
   "workbench.iconTheme": "bearded-icons",
   "workbench.sideBar.location": "right",
-  "workbench.statusBar.visible": false, // Remove bottom status bar
+  // "workbench.statusBar.visible": false, // Remove bottom status bar
   "editor.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.fontSize":  12,
+  "editor.fontSize": 12,
   "files.trimTrailingWhitespace": true,
 
   // Editor
@@ -43,7 +43,7 @@
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
   "editor.glyphMargin": false, // Remove the line number gutter
-  "editor.folding": false, // Remove code-block folding icon
+  // "editor.folding": false, // Remove code-block folding icon
   "editor.hideCursorInOverviewRuler": true, // Remove position indicator in the editor's scrollbar
   "window.titleBarStyle": "native", // Move tabs to be in a single line with window controls
 
@@ -58,7 +58,7 @@
   "terminal.integrated.enableBell": true,
   "terminal.integrated.cursorStyle": "line",
   "workbench.colorCustomizations": {
-    "terminal.ansiBrightBlack":"#686868",
+    "terminal.ansiBrightBlack": "#686868"
   },
   // Python
   "[python]": {
@@ -67,12 +67,44 @@
   },
   // Typescript
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit",
+      "source.sortMembers": "explicit"
+    }
   },
   // Bazel
+  "bazel.executable": "/Users/akshayv/work/maglev/bazel",
+  "bazel.buildifierExecutable": "/Users/akshayv/.local/bin/buildifier",
   "bazel.enableCodeLens": true,
   "bazel.buildifierFixOnFormat": true,
+  // "bazel.lsp.enabled": true,
   // Git
   "git.path": "/usr/bin/git",
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "black-formatter.interpreter": ["/home/akshay/code/pyenv/py38/bin/python"],
+  "extensions.autoCheckUpdates": false,
+  "update.mode": "none",
+  "gopls": {
+    "build.allowModfileModifications": true
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.formatOnSave": false
+  },
+ "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDelete": false,
+  "terminal.integrated.env.osx": {
+    "CW_NEW_SESSION": "1"
+  }
 }
