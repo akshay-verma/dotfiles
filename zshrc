@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # CodeWhisperer pre block. Keep at the top of this file.
 if [[ $(uname) == "Darwin" ]]; then
   [[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh"
@@ -13,7 +20,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 zstyle ':omz:update' mode auto      # update automatically without asking
 
@@ -59,21 +66,12 @@ export WEZTERM_CONFIG_FILE=$HOME/.config/wezterm/wezterm.lua
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# zoxide
-eval "$(zoxide init zsh)"
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 [ -z "$ZPROF" ] || zprof
 
 # Check for updates on initial load...
 source "$ZSH/tools/check_for_upgrade.sh"
 alias bazel=$HOME/work/maglev/bazel
 export KUBECONFIG=$HOME/.kube/maglev-stg0-sjc4.nonprod-nvkong.com
-# export KUBECONFIG=$HOME/.kube/maglev-prd-sjc4.nonprod-nvkong.com
 
 if [[ $(uname) == "Darwin" ]]; then
   # CodeWhisperer post block. Keep at the bottom of this file.
@@ -92,3 +90,14 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# zoxide
+eval "$(zoxide init zsh)"
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
