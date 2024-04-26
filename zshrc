@@ -12,9 +12,11 @@ fi
 
 # For load profiling
 [ -z "$ZPROF" ] || zmodload zsh/zprof
+zmodload zsh/zprof
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -43,7 +45,11 @@ source $ZSH/oh-my-zsh.sh
 
 #######################
 # User configuration
-#######################
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$GOPATH/bin
+export WEZTERM_CONFIG_FILE=$HOME/.config/wezterm/wezterm.lua
+export PROMPT=${PROMPT/\%c/\%~}
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -57,11 +63,6 @@ fi
 
 # Load custom aliases
 source ~/.aliases
-
-export PATH=$PATH:$HOME/go/bin
-export PATH=$PATH:$HOME/.local/bin
-export PROMPT=${PROMPT/\%c/\%~}
-export WEZTERM_CONFIG_FILE=$HOME/.config/wezterm/wezterm.lua
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -101,3 +102,15 @@ eval "$(zoxide init zsh)"
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# pnpm
+export PNPM_HOME="/home/av/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

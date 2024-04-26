@@ -5,90 +5,90 @@
 # Install Script
 sudo -v
 
-# Install Xcode command line tools
-sudo xcode-select --install
+# # Install Xcode command line tools
+# sudo xcode-select --install
 
-# Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+# # Install Homeapt
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homeapt/install/master/install.sh)"
 
-# Install Mac App Store
-brew install mas
+# # Install Mac App Store
+# apt install mas
 
-# Install Raycast
-brew install --cask raycast
+# # Install Raycast
+# apt install --cask raycast
 
-# Install Amphetamine
-mas install 937984704
+# # Install Amphetamine
+# mas install 937984704
 
-# Install kap
-brew install --cask kap
+# # Install kap
+# apt install --cask kap
 
-# Install Rectangle
-brew install --cask rectangle
+# # Install Rectangle
+# apt install --cask rectangle
 
-# Install alt-tab
-brew install --cask alt-tab
+# # Install alt-tab
+# apt install --cask alt-tab
 
-# Install Discord
-brew install --cask discord
+# # Install Discord
+# apt install --cask discord
 
-# Install Dbeaver
-brew install --cask dbeaver-community
+# # Install Dbeaver
+# apt install --cask dbeaver-community
 
-# Install scroll reverser
-brew install --cask scroll-reverser
+# # Install scroll reverser
+# apt install --cask scroll-reverser
 
-# Install n (node manager)
-brew install n
-sudo n latest
+# # Install n (node manager)
+# apt install n
+# sudo n latest
 
-# Install pyenv
-brew install pyenv
+# # Install pyenv
+# apt install pyenv
 
 ######################
 # Install CLI Tools
 ######################
 ## thefuck
-brew install thefuck
+apt install thefuck
 
 ## mcfly
-brew tap cantino/mcfly
-brew install cantino/mcfly/mcfly
+apt tap cantino/mcfly
+apt install cantino/mcfly/mcfly
 
 # HTTPie
-brew install httpie
+apt install httpie
 
-brew install visual-studio-code
-brew install iterm2
-brew install jq
-brew install bat
-brew install tldr
-brew install fzf
-$(brew --prefix)/opt/fzf/install
+apt install visual-studio-code
+apt install iterm2
+apt install jq
+apt install bat
+apt install tldr
+apt install fzf
+$(apt --prefix)/opt/fzf/install
 npm install --global trash-cli
-brew install exa
-brew install autojump
-brew install the_silver_searcher
-brew install peco
-brew install zoxide
-brew install scc
-brew install hyperfine
-brew install tmux
-brew install fd
-brew install ripgrep
-brew install tree
-brew install colordiff
-brew install diff-so-fancy
-brew install lazygit
-brew install wget
+apt install exa
+apt install autojump
+apt install the_silver_searcher
+apt install peco
+apt install zoxide
+apt install scc
+apt install hyperfine
+apt install tmux
+apt install fd
+apt install ripgrep
+apt install tree
+apt install colordiff
+apt install diff-so-fancy
+apt install lazygit
+apt install wget
 
 # Natls
-brew tap willdoescode/homebrew-natls
-brew install natls
+apt tap willdoescode/homeapt-natls
+apt install natls
 
 install_zsh() {
 	# Install zsh
-	brew install zsh
+	apt install zsh
 
 	# Install Oh My Zsh
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -108,7 +108,7 @@ install_zsh() {
 
 install_nvim() {
 	# Install Neovim
-	brew install neovim
+	apt install neovim
 	pip install neovim
 }
 
